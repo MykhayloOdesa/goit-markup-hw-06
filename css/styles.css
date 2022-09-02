@@ -564,9 +564,7 @@ img {
 }
 
 .btn-sub {
-  width: 200px;
-  height: 50px;
-  padding: 10px 0;
+  padding: 10px 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -711,6 +709,7 @@ img {
 }
 
 .form-feedback {
+  height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -729,8 +728,17 @@ img {
   margin-bottom: 20px;
 }
 
-.input-checkbox {
-  display: none;
+.input-checkbox.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .form-label.checkbox {
@@ -743,7 +751,6 @@ img {
 
   color: var(--secondary-text-color);
   margin-bottom: 30px;
-  margin-left: 7px;
 }
 
 .icon-span {
@@ -769,6 +776,7 @@ img {
 .sending {
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 52px;
 }
 
 .portfolio.list {
